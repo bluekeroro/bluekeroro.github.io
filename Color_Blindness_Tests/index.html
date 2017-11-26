@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Color Blindness Tests</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/playMusic.js"></script>
+</head>
+<body id="body">
+<h1 id="logo">Color Blindness Tests</h1>
+<div class="board">
+    <p id="p1">Player Name:<span id="playerName"></span></p>
+    <p id="p2">Ball count:<span id="Ball count"></span></p>
+    <p id="p3">Time:<span id="time"></span>s</p>
+    <p>Press 'r' to Reset!</p>
+</div>
+<div id="start" style="background:url(images/background1.jpg);cursor:auto;">
+    <h1>Welcome,Color Blindness Tests!</h1>
+    <span>&emsp; Player Name:</span>
+    <input id="inputPlayerName" type="text" style="border-radius:25px;"/>
+    <input type="button" value="Start" onclick="start()" style="font-weight:bold;
+            border-radius:25px;background-color:transparent;"/>
+    <br>
+    <hr>
+    <h3>Note:</h3>
+    <pre style="font-weight:bold;font-size:15px">
+    1.You'd better used Chrome to play this game,
+      or there would be some compatibility problems!
+    2.Full screen would give you a better experience.
+    3.This game has sound, so, open your loudspeaker
+      or take your headphones.</pre>
+    <h3>Rule：</h3>
+    <pre style="font-weight:bold;font-size:15px">
+    1.Control your circle with cursor.
+    2.Your circle could eat the ball which has the same
+      color. But if your circle touch the different color
+      balls, you would lose.</pre>
+</div>
+<div id="win" style="cursor:auto;background:url(images/background.jpg);background-color: white;text-align:center" >
+    <h1 style="color:#FFF80B;">WIN!</h1>
+    <p style="font-weight: bold">Use time:<span id="UseTime"></span>s</p>
+    <input type="button" value="Play Again" onclick="again()"
+           style="font-size:25px;font-weight:bold;border-radius:25px;color:white;background-color:#17FF5D;"/>
+</div>
+<div id="lose" style="cursor:auto;background:url(images/painting.jpg);background-color: white;text-align:center" >
+    <h1 style="color:#888888;">LOSE!</h1>
+    <input type="button" value="Try Again" onclick="again()"
+           style="font-size:25px;font-weight:bold;border-radius:25px;color:white;background-color:#17FF5D;"/>
+</div>
+<canvas id="myCanvas"></canvas>
+<script src="js/start.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
